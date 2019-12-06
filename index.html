@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AVT Übungsaufgabe 3</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>AVT Übungsaufgabe 3: Fehlermetriken und Qualitätsanalyse</h1>
+
+    <div id="player-controls" class=general-wrapper>
+      <button id="btn-prev-frame" class="small-button">&#8676;</button>
+      <button id="btn-play-backward" class="small-button reverse">&#9654;</button>
+      <button id="btn-play-forward" class="small-button">&#9654;</button>
+      <button id="btn-next-frame" class="small-button">&#8677;</button>
+    </div>
+      
+    <div class="general-wrapper">
+      <div class="video-container">
+        <canvas id="video-high-quality"></canvas>
+        <canvas id="video-low-quality"></canvas>
+      </div>
+      <div class="metric-container">
+        <h2>Fehler-Metriken</h2>  
+        <div>
+          <div>MAX:</div>
+          <div id="max-display">0</div>
+          <div id="avg-max-display">0</div>
+          <div>SAD:</div>
+          <div id="sad-display">0</div>
+          <div id="avg-sad-display">0</div>
+          <div>MAD:</div>
+          <div id="mad-display">0</div>
+          <div id="avg-mad-display">0</div>
+          <div>MSE:</div>
+          <div id="mse-display">0</div>
+          <div id="avg-mse-display">0</div>
+          <div>PSNR:</div>
+          <div id="psnr-display">0</div>
+          <div id="avg-psnr-display">0</div>
+          <canvas id="histogramm-high-quality"></canvas>
+          <canvas id="histogramm-low-quality"></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
